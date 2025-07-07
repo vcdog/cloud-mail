@@ -34,30 +34,3 @@ crons = ["0 16 * * *"]  #定时任务每天晚上12点执行
 #domain = []                            #邮件域名可可配置多个 示例: ["example1.com","example2.com"]
 #admin = ""                             #管理员的邮箱   示例: admin@example.com
 #jwt_secret = ""                        #jwt令牌的密钥,随便填一串字符串
-
-
-
-[[d1_databases]]
-binding = "db"                  #d1数据库绑定名默认不可修改
-database_name = "ijeko-db1"             #d1数据库名字
-database_id = "ea9bbe67-57be-492d-b063-3b1592e3a2e5"            #d1数据库id
-
-[[kv_namespaces]]
-binding = "kv"                  #kv绑定名默认不可修改
-id = "23377215cab14c57accf1e66b9c7209b"                         #kv数据库id
-
-
-[[r2_buckets]]
-binding = "r2"                  #r2对象存储绑定名默认不可修改
-bucket_name = "cloud-mail"              #r2对象存储桶的名字
-
-
-[assets]
-binding = "assets"              #静态资源绑定名默认不可修改
-directory = "./dist"            #前端vue项目打包的静态资源存放位置,默认dist
-
-[vars]
-orm_log = false
-domain = ["ijeko.com","310188.xyz"]
-admin = "admin@ijeko.com"
-jwt_secret = "18ea9bbe67"
